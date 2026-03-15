@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart City Complaint Management Portal</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container-fluid  px-0">
+    <!-- Header Section -->
+    <div class="row mb-1 m-0">
+      <div class="col-12 p-0">
+        <nav class="navbar  navbar-expand-lg bg-primary navrbar-dark">
+          <div class="container-fluid py-0">
+            <!-- brand name -->
+            <a class="navbar-brand fw-bold text-light py-0 mb-0" href="#">
+              <!-- Logo -->
+              <img src="./img/Smartcity logo1.png" class="img-fluid p-1"
+                style="width: 50px; height: 50px; padding: 0px;" alt="logo">Smart<span
+                style="color: green;">city</span></a>
+
+            <!-- toggle Button -->
+            <button class="navbar-toggler px-1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+              <!-- Menu's -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Track Complaint</a>
+                </li>
+              </ul>
+
+              <!-- login register button -->
+              <form action="">
+                <button class="btn  btn-outline-light fs-6 py-0 px-2" type="submit">Login</button>
+                <button class="btn btn-outline-light fs-6 py-0 px-2" type="submit">Register</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <section class="contact h-vh-75 d-flex align-items-center  ">
+
+      <!-- <div class="container-fluid"> -->
+      <div class="row align-items-md-center mx-0 ">
+        <div class="col-6 col-md-12  text-primary ms-lg-5 ">
+          <div class="ms-md-5 ms-sm-4">
+            <h1 class="fw-bold fs-md-2 fs-3">Create Your Account</h1>
+            <p class="lead fw-bold m-0 fs-md-1 fs-6 ">
+              Register to start reporting the civic issues<br>
+              in your area
+            </p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary mt-2 w-50 text-white" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Register
+            </button>
+
+            <!-- Modal -->
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog  modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header  text-primary">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Registration</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <!-- form -->
+                    <form class="needs-validation">
+                      <div class="mb-3 text-primary d-flex flex-column">
+                        <label for="name" class="form-label">First name</label>
+                        <input type="text" class="form-control" placeholder="first name" id="name" aria-label="Username"
+                          aria-describedby="addon-wrapping" autocapitalize="off">
+
+                        <label for="name" class="form-label">Last name</label>
+                        <input type="text" class="form-control" placeholder="last name" id="name" aria-label="Username"
+                          aria-describedby="addon-wrapping">
+                      </div>
+                      <div class="mb-3 text-primary ">
+
+
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" placeholder="Email address" class="form-control " id="exampleInputEmail1"
+                          aria-describedby="emailHelp">
+                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                      </div>
+                      <div class="mb-3 text-primary">
+                        <label for="exampleInputPassword1" class="form-label ">Password</label>
+                        <input type="password" placeholder="Enter password" id="inputPassword6"
+                          class="form-control form-label" aria-describedby="passwordHelpInline">
+                        <span id="passwordHelpInline" class="form-text text-danger">
+                          Must be 8-20 characters long.
+                        </span>
+                        <!-- <input type="password" class="form-control" id="examInputPassword1"> -->
+                      </div>
+
+                      <div class="col-auto ">
+
+                      </div>
+                      <div class="mb-3 text-primary">
+                        <label for="exampleInputPassword1" class="form-label">Retype Password</label>
+                        <input type="password" placeholder="Enter password" class="form-control"
+                          id="exampleInputPassword1">
+                      </div>
+
+                      <div class="mb-3 form-check text-primary">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary " id="submit">Submit</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </form>
+                  </div>
+
+
+
+                  <div class="modal-footer">
+
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+
+
+
+
+    <div class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row p-0 m-0"
+      style="background-image: url(/images/Registration_desktop.png); min-height:80vh; background-size: cover;  background-repeat: no-repeat;">
+      <div class="col-12">
+        <div class="row">
+          <h1 class="text-center fs-2 mt-2 fs-md-5 mt-md-4">Why Register On SmartCity?</h1>
+          <h3 class="text-center fs-md-5 fw-normal mt-2">help improve your city easy complaint Reporting</h3>
+
+        </div>
+        <div class="row d-md-flex mt-4">
+          <!-- First-card -->
+          <div class="col-md-4 mt-2">
+
+
+            <div class="card">
+              <div class="d-flex g-3">
+                <img src="./images/megaphone3.avif"
+                  style=" border-radius: 50%; width:20%; height: 10%; background-color: rgb(11, 76, 188);"
+                  class="card-img-top p-2 m-3" alt="megaphoneImg">
+
+                <div class="p-4 text-center shadow-sm mt-2">
+                  <h5 class="text-center text-dark fs-2 ">Report Civic Issues</h5>
+                </div>
+              </div>
+              <p class="text-center text-muted pt-2">
+                Quickly report problems like potholes, garbage,
+                water leak.
+              </p>
+
+            </div>
+          </div>
+
+          <!-- 2nd -card -->
+
+          <div class="col-md-4 mt-2 m-0">
+            <div class="card">
+              <div class="d-flex g-3">
+                <img src="./images/location5.jpg"
+                  style=" border-radius: 50%; width:20%; height: 5%; background-color: rgb(11, 76, 188);"
+                  class="card-img-top p-2 m-3" alt="megaphoneImg">
+
+
+                <div class="p-4 text-center shadow-sm">
+                  <h5 class="text-dark text-dark fs-2 ">Track Complaint Status</h5>
+                </div>
+              </div>
+              <p class="text-center text-muted pt-2">
+                Moniter your complaint from submission to resolution.
+              </p>
+
+
+            </div>
+          </div>
+
+          <!-- 3rd card -->
+          <div class="col-md-4 mt-2">
+            <div class="card">
+              <div class="d-flex g-3">
+                <img src="./images/handshake.webp"
+                  style=" border-radius: 50%; width:20%; height: 10%; background-color:rgb(11, 76, 188);;"
+                  class="card-img-top p-2 m-3" alt="megaphoneImg">
+
+                <div class="p-4 text-center shadow-sm">
+                  <h5 class="text-center text-dark fs-2 ">Improve Your City</h5>
+                </div>
+              </div>
+              <p class="text-center text-muted pt-2">
+                Your feedback helps city officials identify and fix issues faster.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row h-25 d-flex justify-content-center  align-items-center mt-4 w-100">
+          <div class="col-lg-6 col-md-7">
+
+            <h1 class="fw-bold text-primary">
+              Smart Citizens Build Smart Cities
+            </h1>
+
+            <p class="text-secondary fs-5">
+              Report civic issues and help improve your community
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  </div>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
