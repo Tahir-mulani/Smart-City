@@ -1,0 +1,29 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+.contact {
+    background: url("./images/pleaseLOgin.png");
+    width: 100%;
+    min-height: 88.5vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+ @media screen and (max-width:786px){
+    .contact
+    {
+        /* background-image: url("./images/please\ LOgin.png"); */
+        background-size: cover;
+    
+        background-position: top;
+        background-repeat: no-repeat;
+       width: 100%;
+       min-height: 30vh;
+       
+    }
+    
+} 
